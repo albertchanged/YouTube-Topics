@@ -17,6 +17,11 @@
   vertical-align: middle;
 }
 
+.input {
+  border-color: #D0D0D0;
+  border-style:solid;
+}
+
 .button {
   border-style: solid;
   vertical-align: middle;
@@ -93,11 +98,6 @@
     clear: left;
   }
 
-  .input {
-    border-color: #D0D0D0;
-    border-style:solid;
-  }
-
   .button {
     font-size: 21.25px;
     margin-bottom: -3px;
@@ -155,11 +155,6 @@
     margin-left: 9%;
     margin-bottom: -10px;
     font-size: 20px;
-  }
-
-  .input {
-    border-color: #D0D0D0;
-    border-style:solid;
   }
 
   .button {
@@ -227,11 +222,6 @@
     margin-left: 6.75%;
     margin-bottom: -10px;
     font-size: 20px;
-  }
-
-  .input {
-    border-color: #D0D0D0;
-    border-style:solid;
   }
 
   .button {
