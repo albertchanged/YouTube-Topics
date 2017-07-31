@@ -22,6 +22,9 @@
   vertical-align: middle;
   font-size: 14px;
   margin-top: -5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .img {
