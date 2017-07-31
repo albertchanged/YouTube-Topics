@@ -376,7 +376,9 @@
   .video-detail .details {
     margin-top: 30px;
     max-height: 143px;
-    padding: 10.5px;
+    padding-top: 10.5px;
+    padding-bottom: 10.5px;
+    padding-left: 14px;
   }
 
   .list-group-item:hover {
