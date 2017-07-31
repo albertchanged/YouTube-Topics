@@ -34,7 +34,7 @@
 }
 
 .search-bar .input {
-  margin-top: -14px;
+  margin-top: -13px;
   margin-bottom: -10px;
   display: inline-block;
   border-color: #D0D0D0;
@@ -101,7 +101,6 @@
   .button {
     font-size: 21px;
     margin-bottom: -2px;
-    width: 1%;
   }
 
   .video-item img {
