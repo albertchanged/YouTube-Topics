@@ -30,6 +30,10 @@ class SearchBar extends Component {
             value={this.state.term}
             onChange={event => this.onInputChange(event.target.value)} onKeyPress={this.handleKeyPress}
             className="input" />
+          <button
+            onClick={event => this.handleClick(this.state.term)}
+            className="button" >♫
+          </button>
         </div>
       </div>
     );

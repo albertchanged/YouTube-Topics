@@ -17,6 +17,13 @@
   vertical-align: middle;
 }
 
+.button {
+  border-style: solid;
+  vertical-align: middle;
+  font-size: 14px;
+  margin-top: -5px;
+}
+
 .img {
   vertical-align: middle;
   padding-bottom: 0.5%;
@@ -65,8 +72,9 @@
   }
 
   .search-bar .logo {
-    font-size: 17.5px;
+    font-size: 16px;
     padding-top: 3%;
+    padding-left: 1%;
   }
 
   .img {
@@ -76,14 +84,20 @@
 
   .search-bar .input {
     padding-left: 1.25%;
-    width: 50%;
-    margin-left: 6%;
+    width: 45%;
+    margin-left: 5.5%;
     font-size: 16px;
+    clear: left;
   }
 
   .input {
     border-color: #D0D0D0;
     border-style:solid;
+  }
+
+  .button {
+    font-size: 14.5px;
+    margin-bottom: -2px;
   }
 
   .video-item img {
@@ -134,8 +148,8 @@
 
   .search-bar .input {
     padding-left: 0.75%;
-    width: 60%;
-    margin-left: 8%;
+    width: 55%;
+    margin-left: 9%;
     margin-bottom: -10px;
     font-size: 20px;
   }
@@ -143,6 +157,11 @@
   .input {
     border-color: #D0D0D0;
     border-style:solid;
+  }
+
+  .button {
+    font-size: 18px;
+    margin-top: -3px;
   }
 
   .list-group {
@@ -188,21 +207,21 @@
   }
 
   .search-bar .logo {
-    font-size: 32.5px;
+    font-size: 30px;
     vertical-align: middle;
     padding-top: 1%;
-    padding-left: 1%;
+    padding-left: 1.5%;
   }
 
   .img {
-    width: 15%;
+    width: 12.5%;
     padding-right: 1%;
   }
 
   .search-bar .input {
     padding-left: 0.75%;
-    width: 56%;
-    margin-left: 5%;
+    width: 55%;
+    margin-left: 6.75%;
     margin-bottom: -10px;
     font-size: 20px;
   }
@@ -210,6 +229,11 @@
   .input {
     border-color: #D0D0D0;
     border-style:solid;
+  }
+
+  .button {
+    font-size: 18px;
+    margin-top: -5px;
   }
 
   .list-group {
@@ -249,7 +273,9 @@
   .youtube-body {
     overflow: hidden;
   }
-
+  .button {
+    display: none;
+  }
   .search-bar {
     margin-left: -170px;
     margin-right: -170px;

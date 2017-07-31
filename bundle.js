@@ -33258,7 +33258,16 @@
 	            onChange: function onChange(event) {
 	              return _this2.onInputChange(event.target.value);
 	            }, onKeyPress: this.handleKeyPress,
-	            className: 'input' })
+	            className: 'input' }),
+	          _react2.default.createElement(
+	            'button',
+	            {
+	              onClick: function onClick(event) {
+	                return _this2.handleClick(_this2.state.term);
+	              },
+	              className: 'button' },
+	            '\u266B'
+	          )
 	        )
 	      );
 	    }
