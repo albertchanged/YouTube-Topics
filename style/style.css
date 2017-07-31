@@ -322,3 +322,62 @@
     background-color: #eee;
   }
 }
+
+@media only screen and (min-width: 1500px) and (max-width: 3000px) {
+  /*Big screen*/
+  .youtube-body {
+    overflow: hidden;
+  }
+  .button {
+    display: none;
+  }
+  .search-bar {
+    margin-left: -500px;
+    margin-right: -500px;
+    padding-top: 1%;
+    padding-bottom: 0.5%;
+    margin-bottom: 30px;
+  }
+
+  .search-bar .logo {
+    font-size: 22px;
+    padding-left: 0.3%;
+    padding-top: 0.05%;
+  }
+
+  .img {
+    width: 7.75%;
+    padding-bottom: 0.5%;
+    padding-right: 0.5%;
+  }
+
+  .search-bar .input {
+    padding-left: 0.6%;
+    width: 50%;
+    margin-left: 20.4%;
+    margin-top: -15px;
+    font-size: 17.5px;
+  }
+
+  .video-item img {
+    max-width: 64px;
+  }
+
+  .list-group {
+    margin-left: 1px;
+    margin-right: -5px;
+    margin-bottom: 0;
+  }
+
+  .video-detail {
+    padding-left: 10%;
+  }
+
+  .video-detail .details {
+    margin-top: 30px;
+  }
+
+  .list-group-item:hover {
+    background-color: #eee;
+  }
+}
