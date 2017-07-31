@@ -32,6 +32,9 @@
   appearance: none;
 }
 
+.button:hover {
+  background-color: #D0D0D0;
+}
 .img {
   vertical-align: middle;
   padding-bottom: 0.5%;
