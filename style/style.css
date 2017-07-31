@@ -71,7 +71,7 @@
     margin-left: -20px;
     margin-right: -20px;
     padding-top: 2%;
-    padding-bottom: 3.5%;
+    padding-bottom: 4%;
   }
 
   .search-bar .logo {
@@ -101,7 +101,7 @@
   .button {
     font-size: 20px;
     margin-bottom: -2px;
-    max-width: 50px;
+    max-width: 20px;
   }
 
   .video-item img {
