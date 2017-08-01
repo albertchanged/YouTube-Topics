@@ -4,7 +4,7 @@ A great tool for you to find and listen to your favorite songs in the highest qu
 
 ## Check it out [here](https://albertchanged.github.io/YouTube-Topics/)!
 
-The search results pull directly from YouTube's 'Topic' channels and dynamically update as you type in the textbox, without interfering with the current video. This creates an convenient and fun experience for you and your ears.
+The search results pull directly from YouTube's 'Topic' channels and dynamically update as you type in the textbox, without interfering with the current video. This creates a convenient and fun experience for you and your ears.
 
 Project involves React JS, Webpack, YouTube Data API, and Bootstrap.
 
