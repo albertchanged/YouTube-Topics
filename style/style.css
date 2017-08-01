@@ -26,6 +26,11 @@
   border-style: solid;
   vertical-align: middle;
   margin-top: -5px;
+  background-color: #ddd;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 5px;
+  padding-right: 6px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -74,7 +79,7 @@
 
 
 @media only screen and (max-width: 500px) {
-  /*Mobile*/
+  /*Mobile portrait*/
   .search-bar {
     margin-left: -20px;
     margin-right: -20px;
@@ -95,6 +100,63 @@
 
   .search-bar .input {
     padding-left: 1.5%;
+    width: 45%;
+    margin-left: 5.5%;
+    font-size: 16px;
+    clear: left;
+  }
+
+  .button {
+    font-size: 17.5px;
+    margin-bottom: -1px;
+  }
+
+  .video-item img {
+    max-width: 64px;
+  }
+
+  .video-detail {
+    margin-left: 2%;
+  }
+
+  .video-detail .details {
+    margin-top: 14px;
+    font-size: 12.5px;
+  }
+
+  .list-group {
+    margin-left: 2%;
+    margin-bottom: 0;
+    padding-top: 13.5px;
+  }
+
+  .list-group-item:hover {
+    background-color: #eee;
+  }
+}
+
+@media only screen and (min-width: 570px) and (max-width: 748px) {
+  /*Mobile landscape*/
+  .search-bar {
+    margin-left: -100px;
+    margin-right: -100px;
+    padding-top: 2%;
+    padding-bottom: 4.5%;
+  }
+
+  .search-bar .logo {
+    font-size: 25px;
+    padding-top: 3%;
+    padding-left: 1%;
+  }
+
+  .img {
+    width: 17.5%;
+    padding-right: 1%;
+  }
+
+  .search-bar .input {
+    padding-left: 1.5%;
     width: 42.5%;
     margin-left: 5.5%;
     font-size: 16px;
@@ -102,8 +164,8 @@
   }
 
   .button {
-    font-size: 21.25px;
-    margin-bottom: -3px;
+    font-size: 17.5px;
+    margin-bottom: -1px;
   }
 
   .video-item img {
@@ -161,7 +223,7 @@
   }
 
   .button {
-    font-size: 18px;
+    font-size: 21.5px;
     margin-top: -3px;
   }
 
@@ -228,7 +290,7 @@
   }
 
   .button {
-    font-size: 18px;
+    font-size: 21.5px;
     margin-top: -5px;
   }
 
