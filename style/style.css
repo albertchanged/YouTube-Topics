@@ -24,6 +24,7 @@
 
 .button {
   border-style: solid;
+  border-color: #848484;
   vertical-align: middle;
   margin-top: -5px;
   background-color: #ddd;
@@ -107,7 +108,7 @@
   }
 
   .button {
-    font-size: 22px;
+    font-size: 21px;
     margin-bottom: -1px;
   }
 
@@ -164,7 +165,7 @@
   }
 
   .button {
-    font-size: 22px;
+    font-size: 21px;
     margin-bottom: -1px;
   }
 
