@@ -36,6 +36,10 @@
 
 @media only screen and (min-width: 1200px) and (max-width: 1490px) {
   // Default
+  .youtube-body {
+    overflow: hidden;
+  }
+
   @include search-bar--default();
   @include video-detail--default();
   @include list-items--default();
@@ -43,6 +47,10 @@
 
 @media only screen and (min-width: 1500px) and (max-width: 3000px) {
   // Big screen
+  .youtube-body {
+    overflow: hidden;
+  }
+  
   @include search-bar--big();
   @include video-detail--big();
   @include list-items--big();
