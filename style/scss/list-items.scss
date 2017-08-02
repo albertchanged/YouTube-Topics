@@ -1,0 +1,78 @@
+.list-group .list-group-item {
+  cursor: pointer;
+  font-size: 14.25px;
+  line-height: 1.2em;
+  padding-top: 0.75rem;
+  padding-bottom: 0.7rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  list-style: none;
+}
+
+.list-group-item:hover {
+  background-color: #eee;
+}
+
+@mixin list-items--mp() { // Mobile portrait
+  .list-group {
+    margin-left: 2%;
+    margin-bottom: 0;
+    padding-top: 13.5px;
+  }
+}
+
+@mixin list-items--ml() { // Mobile landscape
+  .list-group {
+    margin-left: 2%;
+    margin-bottom: 0;
+    padding-top: 13.5px;
+  }
+}
+
+@mixin list-items--ipad() {
+  .list-group {
+    margin-left: -12px;
+    margin-bottom: 0;
+    float: left;
+  }
+
+  .list-group-item .media-object {
+    max-width: 96px;
+  }
+
+  .list-group-item {
+    min-width: 300px;
+  }
+}
+
+@mixin list-items--ipadpro() {
+  .list-group {
+    margin-left: -7.5px;
+    margin-bottom: 0;
+    float: left;
+  }
+
+  .list-group-item .media-object {
+    max-width: 96px;
+  }
+
+  .list-group-item {
+    min-width: 300px;
+  }
+}
+
+@mixin list-items--default() {
+  .list-group {
+    margin-left: -9px;
+    margin-right: -5px;
+    margin-bottom: 0;
+  }
+}
+
+@mixin list-items--big() {
+  .list-group {
+    margin-left: 1px;
+    margin-right: -5px;
+    margin-bottom: 0;
+  }
+}

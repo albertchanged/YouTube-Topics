@@ -14,12 +14,7 @@ class SearchBar extends Component {
     const topicsStyle = {
       color: '#DF0101',
     };
-// <img src="http://diylogodesigns.com/blog/wp-content/uploads/2016/05/youtube-high-resolution-logo-download.png" className="img" /> Topics ♫
-// <strong>You<span style={logoStyle}>Tube</span></strong> Topics ♫
-// <button
-//   onClick={event => this.handleClick(this.state.term)}
-//   className="button" >♫
-// </button>
+
     return (
       <div className="search-bar">
         <div className="logo">
