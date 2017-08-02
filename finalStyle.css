@@ -91,12 +91,16 @@
     width: 45%;
     margin-left: 5.5%;
     font-size: 16px;
-    clear: left; }
+    clear: left;
+    height: 30px;
+    box-sizing: border-box; }
 
   .button {
-    font-size: 17px;
+    height: 30px;
+    width: 30px;
     margin-bottom: -1px;
-    margin-left: -2px; }
+    margin-left: -2px;
+    box-sizing: border-box; }
 
   .video-item img {
     max-width: 64px; }
@@ -133,12 +137,15 @@
     width: 42.5%;
     margin-left: 5.5%;
     font-size: 16px;
-    clear: left; }
+    clear: left;
+    height: 40px;
+    box-sizing: border-box; }
 
   .button {
-    font-size: 17px;
     margin-bottom: -1px;
-    margin-left: -2px; }
+    margin-left: -2px;
+    height: 40px;
+    box-sizing: border-box; }
 
   .video-item img {
     max-width: 64px; }
@@ -159,13 +166,15 @@
     margin-left: -60px;
     margin-right: -60px;
     padding-top: 2%;
-    padding-bottom: 2%; }
+    padding-bottom: 7.25%; }
 
   .search-bar .logo {
     font-size: 25px;
     vertical-align: middle;
     padding-top: 1%;
-    padding-left: 3%; }
+    padding-left: 3%;
+    height: 40px;
+    box-sizing: border-box; }
 
   .img {
     width: 15%;
@@ -174,14 +183,12 @@
   .search-bar .input {
     padding-left: 0.75%;
     width: 55%;
-    margin-left: 9%;
+    margin-left: 12.75%;
     margin-bottom: -10px;
     font-size: 20px; }
 
   .button {
-    font-size: 21px;
-    margin-top: -3px;
-    margin-left: -2px; }
+    display: none; }
 
   .video-detail .details {
     margin-top: 14px;
@@ -224,14 +231,14 @@
   .search-bar .input {
     padding-left: 0.75%;
     width: 55%;
-    margin-left: 6.75%;
+    margin-left: 9.5%;
     margin-bottom: -10px;
-    font-size: 20px; }
+    font-size: 20px;
+    height: 40px;
+    box-sizing: border-box; }
 
   .button {
-    font-size: 21px;
-    margin-top: -5px;
-    margin-left: -2px; }
+    display: none; }
 
   .video-detail .details {
     margin-top: 20px;
