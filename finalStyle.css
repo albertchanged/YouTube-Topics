@@ -262,6 +262,9 @@
   .list-group-item {
     min-width: 300px; } }
 @media only screen and (min-width: 1200px) and (max-width: 1490px) {
+  .youtube-body {
+    overflow: hidden; }
+
   .button {
     display: none; }
 
@@ -303,6 +306,9 @@
     margin-right: -5px;
     margin-bottom: 0; } }
 @media only screen and (min-width: 1500px) and (max-width: 3000px) {
+  .youtube-body {
+    overflow: hidden; }
+
   .button {
     display: none; }
 

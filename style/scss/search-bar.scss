@@ -213,6 +213,10 @@
 }
 
 @mixin search-bar--default() {
+  .youtube-body {
+    overflow: hidden;
+  }
+  
   .button {
     display: none;
   }
@@ -246,6 +250,10 @@
 }
 
 @mixin search-bar--big() {
+  .youtube-body {
+    overflow: hidden;
+  }
+
   .button {
     display: none;
   }
