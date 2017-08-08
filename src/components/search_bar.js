@@ -18,8 +18,10 @@ class SearchBar extends Component {
     return (
       <div className="search-bar">
         <div className="logo">
-          <a href="https://albertchanged.github.io/YouTube-Topics/" id="alogo"><img src="http://diylogodesigns.com/blog/wp-content/uploads/2016/05/youtube-high-resolution-logo-download.png" className="img" />
-          Topics ♫</a>
+          <a href="https://albertchanged.github.io/YouTube-Topics/" id="alogo">
+            <img src="http://diylogodesigns.com/blog/wp-content/uploads/2016/05/youtube-high-resolution-logo-download.png" className="img" />
+            Topics ♫
+          </a>
           <input
             placeholder="Find super HQ music!"
             value={this.state.term}
