@@ -27,13 +27,13 @@
 }
 
 .list-group-item.active {
-  border-width: 4px !important;
-  border-color: #5BA0E1 !important; // #3382CB
-  padding-top: 0.525rem !important;
-  padding-bottom: 0.5rem !important;
-  border-radius: 2.5px !important;
-  color: black !important;
-  background-color: #fff !important;
+  border-width: 4px;
+  border-color: #5BA0E1; // #3382CB
+  padding-top: 0.525rem;
+  padding-bottom: 0.5rem;
+  border-radius: 2.5px;
+  color: black;
+  background-color: #fff;
   margin-bottom: -0.01rem;
   // -webkit-transition: 0.1s;
 }
