@@ -9,7 +9,7 @@ class SearchBar extends Component {
     this.handleClick = this.handleClick.bind(this);
     this.handleKeyPress = this.handleKeyPress.bind(this);
   };
-
+  
   render() {
     const topicsStyle = {
       color: '#DF0101',
