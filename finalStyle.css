@@ -61,7 +61,7 @@
   background-color: #fff; }
 
 .link {
-  color: #438CD0; }
+  color: #438CD0 !important; }
 
 .link:hover {
   text-decoration: underline; }
