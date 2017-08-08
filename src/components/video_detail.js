@@ -17,14 +17,14 @@ const VideoDetail = ({video, videoId}) => {
         <iframe className="embed-responsive-item" src={url}></iframe>
       </div>
       <div className="details">
-      <strong>
-        <div>
-          <a href={externalUrl} id="link" target="_blank">{video.snippet.title}</a>
-        </div>
-        <div>
-          {video.snippet.channelTitle}
-        </div>
-      </strong>
+        <strong>
+          <div>
+            <a href={externalUrl} id="link" target="_blank">{video.snippet.title}</a>
+          </div>
+          <div>
+            {video.snippet.channelTitle}
+          </div>
+        </strong>
         <br></br>
         <div className="description">{video.snippet.description}</div>
       </div>
