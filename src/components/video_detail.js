@@ -18,12 +18,8 @@ const VideoDetail = ({video, videoId}) => {
       </div>
       <div className="details">
         <strong>
-          <div>
-            <a href={externalUrl} id="link" target="_blank">{video.snippet.title}</a>
-          </div>
-          <div>
-            {video.snippet.channelTitle}
-          </div>
+          <div><a href={externalUrl} id="link" target="_blank">{video.snippet.title}</a></div>
+          <div>{video.snippet.channelTitle}</div>
         </strong>
         <br></br>
         <div className="description">{video.snippet.description}</div>
