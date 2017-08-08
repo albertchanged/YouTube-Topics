@@ -33449,7 +33449,7 @@
 
 	  videoId = video.id.videoId;
 	  console.log(videoId);
-	  var url = "https://www.youtube.com/embed/" + videoId + "?vq=hd1080?rel=0;&autoplay=1&loop=1&playlist=" + videoId;
+	  var url = "https://www.youtube.com/embed/" + videoId + "?vq=hd1080?rel=0;&autoplay=1&playsinline=1&loop=1&playlist=" + videoId;
 	  var externalUrl = "https://www.youtube.com/watch?v=" + videoId;
 	  // console.log(url);
 	  return _react2.default.createElement(
