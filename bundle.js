@@ -83,6 +83,10 @@
 
 	var _video_detail2 = _interopRequireDefault(_video_detail);
 
+	var _video_list_data = __webpack_require__(180);
+
+	var _video_list_data2 = _interopRequireDefault(_video_list_data);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -105,7 +109,8 @@
 
 	    _this.state = {
 	      videos: [],
-	      selectedVideo: null
+	      selectedVideo: null,
+	      videoId: ''
 	    };
 
 	    _this.videoSearchAndChange('everytime we touch yanou candlelight mix');
@@ -157,7 +162,8 @@
 	          onVideoSelect: function onVideoSelect(selectedVideo) {
 	            return _this4.setState({ selectedVideo: selectedVideo });
 	          },
-	          videos: this.state.videos })
+	          videos: this.state.videos,
+	          id: this.state.videoId })
 	      );
 	    }
 	  }]);
@@ -33245,8 +33251,12 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'logo' },
-	          _react2.default.createElement('img', { src: 'http://diylogodesigns.com/blog/wp-content/uploads/2016/05/youtube-high-resolution-logo-download.png', className: 'img' }),
-	          'Topics \u266B',
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'https://albertchanged.github.io/YouTube-Topics/', id: 'alogo' },
+	            _react2.default.createElement('img', { src: 'http://diylogodesigns.com/blog/wp-content/uploads/2016/05/youtube-high-resolution-logo-download.png', className: 'img' }),
+	            'Topics \u266B'
+	          ),
 	          _react2.default.createElement('input', {
 	            placeholder: 'Find super HQ music!',
 	            value: this.state.term,
@@ -33308,15 +33318,21 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var VideoList = function VideoList(props) {
+	  var videoList = [];
 	  var videoItems = props.videos.map(function (video) {
 
 	    if (video.snippet.channelTitle.includes(' - Topic')) {
+
+	      videoList.push(video.id.videoId);
+
 	      return _react2.default.createElement(_video_list_item2.default, {
 	        onVideoSelect: props.onVideoSelect,
 	        key: video.etag,
-	        video: video });
+	        video: video,
+	        id: videoList });
 	    }
 	  });
+	  console.log(videoList + " from video_list");
 
 	  return _react2.default.createElement(
 	    'div',
@@ -33349,7 +33365,8 @@
 
 	var VideoListItem = function VideoListItem(_ref) {
 	  var video = _ref.video,
-	      onVideoSelect = _ref.onVideoSelect;
+	      onVideoSelect = _ref.onVideoSelect,
+	      id = _ref.id;
 
 	  // const video = props.video;
 	  // const onVideoSelect = props.onVideoSelect;
@@ -33402,7 +33419,7 @@
 /* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -33412,57 +33429,62 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _video_list = __webpack_require__(177);
+
+	var _video_list2 = _interopRequireDefault(_video_list);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var VideoDetail = function VideoDetail(_ref) {
-	  var video = _ref.video;
+	  var video = _ref.video,
+	      videoId = _ref.videoId;
 
 	  if (!video) {
 	    return _react2.default.createElement(
-	      "div",
+	      'div',
 	      null,
-	      "Loading..."
+	      'Loading...'
 	    );
 	  }
 
-	  var videoId = video.id.videoId;
-	  // console.log(videoId);
-	  var url = "https://www.youtube.com/embed/" + videoId + "?vq=hd1080?rel=0;&autoplay=1";
+	  videoId = video.id.videoId;
+	  console.log(videoId);
+	  var url = "https://www.youtube.com/embed/" + videoId + "?vq=hd1080?rel=0;&autoplay=1&loop=1&playlist=" + videoId;
 	  var externalUrl = "https://www.youtube.com/watch?v=" + videoId;
 	  // console.log(url);
 	  return _react2.default.createElement(
-	    "div",
-	    { className: "video-detail col-md-8" },
+	    'div',
+	    { className: 'video-detail col-md-8' },
 	    _react2.default.createElement(
-	      "div",
-	      { className: "embed-responsive embed-responsive-16by9" },
-	      _react2.default.createElement("iframe", { className: "embed-responsive-item", src: url })
+	      'div',
+	      { className: 'embed-responsive embed-responsive-16by9' },
+	      _react2.default.createElement('iframe', { className: 'embed-responsive-item', src: url })
 	    ),
 	    _react2.default.createElement(
-	      "div",
-	      { className: "details" },
+	      'div',
+	      { className: 'details' },
 	      _react2.default.createElement(
-	        "div",
+	        'strong',
 	        null,
 	        _react2.default.createElement(
-	          "strong",
+	          'div',
 	          null,
 	          _react2.default.createElement(
-	            "a",
-	            { href: externalUrl, target: "_blank" },
+	            'a',
+	            { href: externalUrl, id: 'link', target: '_blank' },
 	            video.snippet.title
 	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          null,
+	          video.snippet.channelTitle
 	        )
 	      ),
+	      _react2.default.createElement('br', null),
 	      _react2.default.createElement(
-	        "div",
-	        null,
-	        video.snippet.channelTitle
-	      ),
-	      _react2.default.createElement("br", null),
-	      _react2.default.createElement(
-	        "div",
-	        null,
+	        'div',
+	        { className: 'description' },
 	        video.snippet.description
 	      )
 	    )
@@ -33470,6 +33492,12 @@
 	};
 
 	exports.default = VideoDetail;
+
+/***/ }),
+/* 180 */
+/***/ (function(module, exports) {
+
+	"use strict";
 
 /***/ })
 /******/ ]);
