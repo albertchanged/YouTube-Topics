@@ -1,57 +1,76 @@
 @import 'search-bar';
 @import 'video-detail';
 @import 'list-items';
+@import 'footer';
 
 .youtube-body {
-  background-color: #E9E9E9;
+  background-color: #E5E5E5;
 }
 
 @media only screen and (max-width: 569px) {
   //Mobile portrait
+  .youtube-body {
+    overflow-x: hidden;
+  }
+
   @include search-bar--mp();
   @include video-detail--mp();
   @include list-items--mp();
+  @include footer--mp();
 }
 
 @media only screen and (min-width: 570px) and (max-width: 748px) {
   // Mobile landscape
+  .youtube-body {
+    overflow-x: hidden;
+  }
   @include search-bar--ml();
   @include video-detail--ml();
   @include list-items--ml();
+  @include footer--ml();
 }
 
 @media only screen and (min-width: 750px) and (max-width: 1020px) {
   // iPad
+  .youtube-body {
+    overflow-x: hidden;
+  }
   @include search-bar--ipad();
   @include video-detail--ipad();
   @include list-items--ipad();
+  @include footer--ipad();
 }
 
 @media only screen and (min-width: 1023px) and (max-width: 1100px) {
   // iPad Pro
+  .youtube-body {
+    overflow-x: hidden;
+  }
   @include search-bar--ipadpro();
   @include video-detail--ipadpro();
   @include list-items--ipadpro();
+  @include footer--ipadpro();
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1490px) {
   // Default
   .youtube-body {
-    overflow: hidden;
+    overflow-x: hidden;
   }
-
   @include search-bar--default();
   @include video-detail--default();
   @include list-items--default();
+  @include footer--default();
 }
 
 @media only screen and (min-width: 1500px) and (max-width: 3000px) {
   // Big screen
   .youtube-body {
-    overflow: hidden;
+    overflow-x: hidden;
   }
-  
+
   @include search-bar--big();
   @include video-detail--big();
   @include list-items--big();
+  @include footer--big();
 }

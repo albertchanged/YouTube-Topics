@@ -1,16 +1,41 @@
-.list-group .list-group-item {
+.list-group .list-group-item, .inactive {
   cursor: pointer;
   font-size: 14.25px;
   line-height: 1.2em;
-  padding-top: 0.75rem;
-  padding-bottom: 0.7rem;
+  padding-top: 0.72rem;
+  padding-bottom: 0.67rem;
   padding-left: 0.75rem;
-  padding-right: 0.75rem;
+  padding-right: 1.5rem;
   list-style: none;
+  margin-bottom: -0.03px;
+  box-sizing: border-box;
+  -webkit-transition: 0.05s ease;
+  // -webkit-transition: 0s 2s;
 }
 
 .list-group-item:hover {
-  background-color: #eee;
+  // background-color: #F4F4F4;
+  border-width: 4px;
+  border-color: #5BA0E1;
+  padding-top: 0.52rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  border-radius: 2.5px;
+  margin-bottom: -0.01rem;
+  // -webkit-transition: 0.1s;
+
+}
+
+.list-group-item.active {
+  border-width: 4px !important;
+  border-color: #5BA0E1 !important; // #3382CB
+  padding-top: 0.525rem !important;
+  padding-bottom: 0.5rem !important;
+  border-radius: 2.5px !important;
+  color: black !important;
+  background-color: #fff !important;
+  margin-bottom: -0.01rem;
+  // -webkit-transition: 0.1s;
 }
 
 @mixin list-items--mp() { // Mobile portrait

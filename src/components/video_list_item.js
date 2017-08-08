@@ -1,6 +1,6 @@
 import React from 'react';
 
-const VideoListItem = ({video, onVideoSelect}) => {
+const VideoListItem = ({video, onVideoSelect, id}) => {
   // const video = props.video;
   // const onVideoSelect = props.onVideoSelect;
 

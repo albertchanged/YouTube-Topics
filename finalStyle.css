@@ -10,6 +10,12 @@
   border-radius: 4px;
   border: 1px solid #ddd; }
 
+.alogo {
+  color: #373a3c !important; }
+
+.alogo:hover {
+  text-decoration: none !important; }
+
 .search-bar .logo {
   display: inline-block;
   vertical-align: middle; }
@@ -54,31 +60,71 @@
   border-radius: 3px;
   background-color: #fff; }
 
+.link {
+  color: #438CD0; }
+
+.link:hover {
+  text-decoration: underline; }
+
+.description {
+  color: #6E6E6E; }
+
 .video-item img {
   max-width: 64px; }
 
-.list-group .list-group-item {
+.list-group .list-group-item, .inactive {
   cursor: pointer;
   font-size: 14.25px;
   line-height: 1.2em;
-  padding-top: 0.75rem;
-  padding-bottom: 0.7rem;
+  padding-top: 0.72rem;
+  padding-bottom: 0.67rem;
   padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  list-style: none; }
+  padding-right: 1.5rem;
+  list-style: none;
+  margin-bottom: -0.03px;
+  box-sizing: border-box;
+  -webkit-transition: 0.05s ease; }
 
 .list-group-item:hover {
-  background-color: #eee; }
+  border-width: 4px;
+  border-color: #5BA0E1;
+  padding-top: 0.52rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  border-radius: 2.5px;
+  margin-bottom: -0.01rem; }
+
+.list-group-item.active {
+  border-width: 4px !important;
+  border-color: #5BA0E1 !important;
+  padding-top: 0.525rem !important;
+  padding-bottom: 0.5rem !important;
+  border-radius: 2.5px !important;
+  color: black !important;
+  background-color: #fff !important;
+  margin-bottom: -0.01rem; }
+
+#footer {
+  text-align: center;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+#linkedin, #github, #website {
+  vertical-align: middle; }
 
 .youtube-body {
-  background-color: #E9E9E9; }
+  background-color: #E5E5E5; }
 
 @media only screen and (max-width: 569px) {
+  .youtube-body {
+    overflow-x: hidden; }
+
   .search-bar {
     margin-left: -20px;
     margin-right: -20px;
     padding-top: 2%;
-    padding-bottom: 4.5%; }
+    padding-bottom: 4.25%; }
 
   .search-bar .logo {
     font-size: 16px;
@@ -118,8 +164,30 @@
   .list-group {
     margin-left: 2%;
     margin-bottom: 0;
-    padding-top: 13.5px; } }
+    padding-top: 13.5px; }
+
+  #linkedin {
+    width: 5.5%;
+    padding-bottom: 2px; }
+
+  #github {
+    width: 6.5%;
+    padding-bottom: 3px; }
+
+  #website {
+    width: 6.5%;
+    padding-bottom: 3px; }
+
+  #footer {
+    margin-top: 20px;
+    font-size: 14px;
+    margin-right: -5px;
+    padding-left: 5px;
+    padding-bottom: 15px; } }
 @media only screen and (min-width: 570px) and (max-width: 748px) {
+  .youtube-body {
+    overflow-x: hidden; }
+
   .search-bar {
     margin-left: -100px;
     margin-right: -100px;
@@ -164,8 +232,26 @@
   .list-group {
     margin-left: 2%;
     margin-bottom: 0;
-    padding-top: 13.5px; } }
+    padding-top: 13.5px; }
+
+  #linkedin {
+    width: 3.5%;
+    padding-bottom: 2px; }
+
+  #github {
+    width: 4.5%;
+    padding-bottom: 3px; }
+
+  #website {
+    width: 4.5%;
+    padding-bottom: 3px; }
+
+  #footer {
+    margin-top: 20px; } }
 @media only screen and (min-width: 750px) and (max-width: 1020px) {
+  .youtube-body {
+    overflow-x: hidden; }
+
   .search-bar {
     margin-left: -60px;
     margin-right: -60px;
@@ -213,8 +299,27 @@
     max-width: 96px; }
 
   .list-group-item {
-    min-width: 300px; } }
+    min-width: 300px; }
+
+  #linkedin {
+    width: 3.5%;
+    padding-bottom: 2px; }
+
+  #github {
+    width: 4.5%;
+    padding-bottom: 3px; }
+
+  #website {
+    width: 4.25%;
+    padding-bottom: 3px; }
+
+  #footer {
+    position: absolute;
+    bottom: 0; } }
 @media only screen and (min-width: 1023px) and (max-width: 1100px) {
+  .youtube-body {
+    overflow-x: hidden; }
+
   .search-bar {
     margin-left: -60px;
     margin-right: -60px;
@@ -263,13 +368,29 @@
     max-width: 96px; }
 
   .list-group-item {
-    min-width: 300px; } }
+    min-width: 300px; }
+
+  #linkedin {
+    width: 3.25%;
+    padding-bottom: 2px; }
+
+  #github {
+    width: 3.75%;
+    padding-bottom: 3px; }
+
+  #website {
+    width: 3.75%;
+    padding-bottom: 3px; }
+
+  #footer {
+    position: absolute;
+    bottom: 0; } }
 @media only screen and (min-width: 1200px) and (max-width: 1490px) {
   .youtube-body {
-    overflow: hidden; }
+    overflow-x: hidden; }
 
   .youtube-body {
-    overflow: hidden; }
+    overflow-x: hidden; }
 
   .button {
     display: none; }
@@ -277,25 +398,25 @@
   .search-bar {
     margin-left: -170px;
     margin-right: -170px;
-    padding-top: 1%;
-    padding-bottom: 0.5%;
+    padding-top: 0.75%;
+    padding-bottom: 0.3%;
     margin-bottom: 20px; }
 
   .search-bar .logo {
     font-size: 22px;
     padding-left: 0.3%;
-    padding-top: 0.05%; }
+    padding-top: 0.1%; }
 
   .img {
-    width: 7.75%;
+    width: 7%;
     padding-bottom: 0.5%;
     padding-right: 0.5%; }
 
   .search-bar .input {
     padding-left: 0.6%;
-    width: 50%;
+    width: 604.5px;
     margin-left: 20.4%;
-    margin-top: -15px;
+    margin-top: -16px;
     font-size: 17.5px; }
 
   .video-item img {
@@ -310,13 +431,28 @@
   .list-group {
     margin-left: -9px;
     margin-right: -5px;
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+
+  #linkedin {
+    max-width: 2%;
+    padding-bottom: 3px; }
+
+  #github {
+    max-width: 2.5%;
+    padding-bottom: 3px; }
+
+  #website {
+    max-width: 2.5%;
+    padding-bottom: 3px; }
+
+  #footer {
+    margin-top: 40px; } }
 @media only screen and (min-width: 1500px) and (max-width: 3000px) {
   .youtube-body {
-    overflow: hidden; }
+    overflow-x: hidden; }
 
   .youtube-body {
-    overflow: hidden; }
+    overflow-x: hidden; }
 
   .button {
     display: none; }
@@ -340,7 +476,7 @@
 
   .search-bar .input {
     padding-left: 0.6%;
-    width: 50%;
+    width: 540px;
     margin-left: 20.4%;
     margin-top: -15px;
     font-size: 17.5px; }
@@ -358,6 +494,23 @@
   .list-group {
     margin-left: 1px;
     margin-right: -5px;
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+
+  #linkedin {
+    max-width: 1.5%;
+    padding-bottom: 3px; }
+
+  #github {
+    max-width: 1.75%;
+    padding-bottom: 3px; }
+
+  #website {
+    max-width: 1.75%;
+    padding-bottom: 3px; }
+
+  #footer {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 8px; } }
 
 /*# sourceMappingURL=finalStyle.css.map */

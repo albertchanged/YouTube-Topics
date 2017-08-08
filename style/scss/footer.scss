@@ -1,0 +1,108 @@
+#footer {
+  text-align: center;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#linkedin, #github, #website {
+  vertical-align: middle;
+}
+
+@mixin footer--mp() {
+  #linkedin {
+    width: 5.5%; padding-bottom: 2px;
+  }
+  #github {
+    width: 6.5%; padding-bottom: 3px;
+  }
+  #website {
+    width: 6.5%; padding-bottom: 3px;
+  }
+  #footer {
+    margin-top: 20px;
+    font-size: 14px;
+    margin-right: -5px;
+    padding-left: 5px;
+    padding-bottom: 15px;
+  }
+}
+
+@mixin footer--ml() {
+  #linkedin {
+    width: 3.5%; padding-bottom: 2px;
+  }
+  #github {
+    width: 4.5%; padding-bottom: 3px;
+  }
+  #website {
+    width: 4.5%; padding-bottom: 3px;
+  }
+  #footer {
+    margin-top: 20px;
+  }
+}
+
+@mixin footer--ipad() {
+  #linkedin {
+    width: 3.5%; padding-bottom: 2px;
+  }
+  #github {
+    width: 4.5%; padding-bottom: 3px;
+  }
+  #website {
+    width: 4.25%; padding-bottom: 3px;
+  }
+  #footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@mixin footer--ipadpro() {
+  #linkedin {
+    width: 3.25%; padding-bottom: 2px;
+  }
+  #github {
+    width: 3.75%; padding-bottom: 3px;
+  }
+  #website {
+    width: 3.75%; padding-bottom: 3px;
+  }
+  #footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@mixin footer--default() {
+  #linkedin {
+    max-width: 2%; padding-bottom: 3px;
+  }
+  #github {
+    max-width: 2.5%; padding-bottom: 3px;
+  }
+  #website {
+    max-width: 2.5%; padding-bottom: 3px;
+  }
+  #footer {
+    margin-top: 40px;
+  }
+}
+
+@mixin footer--big() {
+  #linkedin {
+    max-width: 1.5%; padding-bottom: 3px;
+  }
+  #github {
+    max-width: 1.75%; padding-bottom: 3px;
+  }
+  #website {
+    max-width: 1.75%; padding-bottom: 3px;
+  }
+  #footer {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 8px;
+  }
+}

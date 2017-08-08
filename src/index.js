@@ -5,6 +5,7 @@ import YTSearch from 'youtube-api-search';
 import SearchBar from './components/search_bar';
 import VideoList from './components/video_list';
 import VideoDetail from './components/video_detail';
+import VideoListData from './containers/video_list_data';
 const API_KEY = 'AIzaSyC9AA_JLazFr5MpUefWbrCp8Xy_MQg099s';
 
 // Create a new component. This component should produce some HTML
@@ -14,7 +15,8 @@ class App extends Component {
 
     this.state = {
       videos: [],
-      selectedVideo: null
+      selectedVideo: null,
+      videoId: ''
     };
 
     this.videoSearchAndChange('everytime we touch yanou candlelight mix');
@@ -48,7 +50,8 @@ class App extends Component {
         <VideoDetail video={this.state.selectedVideo}/>
         <VideoList
           onVideoSelect={selectedVideo => this.setState({selectedVideo})}
-          videos={this.state.videos} />
+          videos={this.state.videos}
+          id={this.state.videoId}/>
       </div>
     );
   }

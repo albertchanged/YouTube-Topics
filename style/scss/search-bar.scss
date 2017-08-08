@@ -12,6 +12,14 @@
   border: 1px solid #ddd;
 }
 
+.alogo {
+  color: #373a3c !important;
+}
+
+.alogo:hover {
+  text-decoration: none !important;
+}
+
 .search-bar .logo {
   display: inline-block;
   vertical-align: middle;
@@ -61,7 +69,7 @@
     margin-left: -20px;
     margin-right: -20px;
     padding-top: 2%;
-    padding-bottom: 4.5%;
+    padding-bottom: 4.25%;
   }
 
   .search-bar .logo {
@@ -218,7 +226,7 @@
 
 @mixin search-bar--default() {
   .youtube-body {
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   .button {
@@ -227,35 +235,35 @@
   .search-bar {
     margin-left: -170px;
     margin-right: -170px;
-    padding-top: 1%;
-    padding-bottom: 0.5%;
+    padding-top: 0.75%;
+    padding-bottom: 0.3%;
     margin-bottom: 20px;
   }
 
   .search-bar .logo {
     font-size: 22px;
     padding-left: 0.3%;
-    padding-top: 0.05%;
+    padding-top: 0.1%;
   }
 
   .img {
-    width: 7.75%;
+    width: 7%;
     padding-bottom: 0.5%;
     padding-right: 0.5%;
   }
 
   .search-bar .input {
     padding-left: 0.6%;
-    width: 50%;
+    width: 604.5px;
     margin-left: 20.4%;
-    margin-top: -15px;
+    margin-top: -16px;
     font-size: 17.5px;
   }
 }
 
 @mixin search-bar--big() {
   .youtube-body {
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   .button {
@@ -283,7 +291,7 @@
 
   .search-bar .input {
     padding-left: 0.6%;
-    width: 50%;
+    width: 540px;
     margin-left: 20.4%;
     margin-top: -15px;
     font-size: 17.5px;
